@@ -21,7 +21,9 @@ async def on_member_remove(member):
     channel = bot.get_channel(853170882263646259)
     await channel.send(F'{member} sad! 離開了狼之國')
 
+@bot.command()
+async def ping(ctx):
+    await ctx.send(F'{round(bot.latency*1000)} 毫秒ms')
 
-
-bot.run("ODg4MzY2OTQ1MTkwMTc4ODI2.YURqMA.AXX4R1PSrVF2BNWV7N8EgaB6OxY")
+bot.run("ODg4MzY2OTQ1MTkwMTc4ODI2.YURqMA.FCO60O9L4BXh8hKyZPEBu_9OS_Q")
 
